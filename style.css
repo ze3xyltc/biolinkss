@@ -249,3 +249,52 @@ footer {
   border: none;
   box-shadow: none;
 }
+/* === NAVBAR MOBILE === */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+  color: var(--accent);
+}
+
+/* Układ domyślny */
+#nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(20, 20, 25, 0.95);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0 0 15px 15px;
+    display: none;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+}
