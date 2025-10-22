@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zeexy | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+  </head>
+  <body>
+    <div class="animated-bg"></div>
+
+    <header class="navbar">
+      <h1 class="logo">zeexy</h1>
+      <nav>
+        <a href="#about">O mnie</a>
+        <a href="#projects">Projekty</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header>
+
+    <section id="about" class="section fade">
+      <div class="about-container">
+        <img src="logo.png" alt="Avatar" class="avatar" />
+        <div>
+          <h2>O mnie</h2>
+          <p class="subtitle">web dev · lua dev · bot dev</p>
+          <p>
+            Cześć! Jestem <strong>zeexy</strong> — tworzę nowoczesne strony internetowe,
+            boty Discord i skrypty Lua. Stawiam na czysty kod, elegancki design i płynne animacje.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section fade">
+      <h2>Projekty</h2>
+      <p class="section-desc">Kliknij projekt, aby przejść na stronę.</p>
+
+      <div class="projects-grid">
+        <div class="project-card" onclick="window.open('#', '_blank')">
+          <img src="https://via.placeholder.com/100" alt="Logo" class="project-logo" />
+          <h3>Projekt 1</h3>
+          <p>Przykładowy opis projektu — np. bot, strona, system skryptów.</p>
+        </div>
+
+        <div class="project-card" onclick="window.open('#', '_blank')">
+          <img src="https://via.placeholder.com/100" alt="Logo" class="project-logo" />
+          <h3>Projekt 2</h3>
+          <p>Drugi przykład projektu do podmiany.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section fade">
+      <h2>Kontakt</h2>
+      <p class="section-desc">Znajdziesz mnie tutaj</p>
+
+      <div class="contact-container">
+        <div class="socials">
+          <a href="https://discord.com/users/1063373610116464710" target="_blank" class="social-link discord" title="Discord">
+            <i class="fab fa-discord"></i>
+          </a>
+          <a href="https://steamcommunity.com/id/zeexy" target="_blank" class="social-link steam" title="Steam">
+            <i class="fab fa-steam"></i>
+          </a>
+          <a href="https://www.tiktok.com/@zeexy" target="_blank" class="social-link tiktok" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.youtube.com/@zeexy" target="_blank" class="social-link youtube" title="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://github.com/zeexy" target="_blank" class="social-link github" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 zeexy. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
